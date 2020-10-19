@@ -154,9 +154,22 @@
       <title>Pasta Molisana</title>
   </head>
   <body>
+    <!--template array pasta lunga lunga-->
     @foreach ($lunga as $j)
-  <h2>{{$j['tipo']}}</h2> 
-  <img src="{{$j['src']}}" alt=""> 
+      <h2>{{$j['tipo']}}</h2> 
+      <img src="{{$j['src']}}" alt=""> 
+    @endforeach
+
+    <!--template array pasta corta-->
+    @foreach ($corta as $j)
+      <h2>{{$j['tipo']}}</h2> 
+      <img src="{{$j['src']}}" alt=""> 
+    @endforeach
+
+    <!--template array pasta cortissima-->
+    @foreach ($cortissima as $j)
+      <h2>{{$j['tipo']}}</h2> 
+      <img src="{{$j['src']}}" alt=""> 
     @endforeach
   </body>
 </html>
