@@ -136,9 +136,12 @@
  foreach ($array as $k => $product) {
    if($product['tipo'] == 'lunga'){
      $lunga[] = $product;
+   } elseif ($product['tipo'] == 'corta') {
+     $corta[] = $product;
+   } elseif ($product['tipo'] == 'cortissima') {
+     $cortissima[] = $product;
    }
  }
-  dd($lunga);
 @endphp
 
 <!DOCTYPE html>
