@@ -142,6 +142,7 @@
      $cortissima[] = $product;
    }
  }
+
 @endphp
 
 <!DOCTYPE html>
@@ -150,9 +151,11 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Document</title>
+      <title>Pasta Molisana</title>
   </head>
   <body>
-    <h1>prova router</h1>
+    @for ($i = 0; $i < $lunga; $i++)
+      <h2>{{$lunga['lunga']}}</h2>;
+    @endfor
   </body>
 </html>
