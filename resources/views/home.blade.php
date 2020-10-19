@@ -151,9 +151,16 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{asset("css/app.css")}}">
       <title>Pasta Molisana</title>
   </head>
   <body>
+    <!-- logo pasta molisana-->
+    <div class="img_container">
+      <img class="img_logo" src="{{asset("images/logo_molisana.png")}}" alt="">
+    </div>
+  
+
     <!--template array pasta lunga lunga-->
     @foreach ($lunga as $j)
       <h2>{{$j['tipo']}}</h2> 
