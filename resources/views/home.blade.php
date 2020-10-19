@@ -154,8 +154,9 @@
       <title>Pasta Molisana</title>
   </head>
   <body>
-    @for ($i = 0; $i < $lunga; $i++)
-      <h2>{{$lunga['lunga']}}</h2>;
-    @endfor
+    @foreach ($lunga as $j)
+  <h2>{{$j['tipo']}}</h2> 
+  <img src="{{$j['src']}}" alt=""> 
+    @endforeach
   </body>
 </html>
