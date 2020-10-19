@@ -1,4 +1,6 @@
-<?php
+@php
+    
+
 $data = '[
  {
    "src": "https://www.lamolisana.it/wp-content/uploads/2017/06/4-spaghetto-quadrato-bucato-m.jpg",
@@ -124,3 +126,17 @@ $data = '[
 
 $ array = json_decode(data, true);
 dd($array);
+@endphp
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <h1>prova router</h1>
+</body>
+</html>
