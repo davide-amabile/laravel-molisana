@@ -1,7 +1,10 @@
-* {
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;
+
+0,700;1,400&display=swap);* {
   background-origin: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .img_container {
@@ -24,7 +27,13 @@
 
 .nav_pagine li {
   display: inline-block;
-  font-size: 25px;
+  font-size: 50px;
+  margin: 25px 0px;
+  padding: 25px;
+}
+
+.nav_pagine li:hover {
+  background-color: #b3e5fc;
 }
 
 .nav_pagine li a {
