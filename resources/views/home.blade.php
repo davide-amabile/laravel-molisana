@@ -32,28 +32,47 @@
       <title>Pasta Molisana</title>
   </head>
   <body>
-    <!-- logo pasta molisana-->
-    <div class="img_container">
-      <img class="img_logo" src="{{asset("images/logo_molisana.png")}}" alt="">
-    </div>
-  
+    <header>
+      <!-- logo pasta molisana-->
+      <div class="img_container">
+        <img class="img_logo" src="{{asset("images/logo_molisana.png")}}" alt="">
+      </div>
+      <!-- logo pasta molisana-->
+      <!-- nav menu -->
+      <div class="nav_pagine">
+        <ul>
+        <li><a href="{{route('home')}}">Home</a></li>
+          <li><a href="{{route('prodotti')}}">Prodotti</a></li>
+          <li><a href="{{route('news')}}">News</a></li>
+        </ul>
+      </div>
+      <!--/ nav menu -->
+    </header>
+    
+    <main>
+     <!--template array pasta lunga lunga-->
+      @foreach ($lunga as $j)
+        <h2>{{$j['tipo']}}</h2> 
+        <img src="{{$j['src']}}" alt=""> 
+      @endforeach
 
-    <!--template array pasta lunga lunga-->
-    @foreach ($lunga as $j)
-      <h2>{{$j['tipo']}}</h2> 
-      <img src="{{$j['src']}}" alt=""> 
-    @endforeach
+      <!--template array pasta corta-->
+      @foreach ($corta as $j)
+        <h2>{{$j['tipo']}}</h2> 
+        <img src="{{$j['src']}}" alt=""> 
+      @endforeach
 
-    <!--template array pasta corta-->
-    @foreach ($corta as $j)
-      <h2>{{$j['tipo']}}</h2> 
-      <img src="{{$j['src']}}" alt=""> 
-    @endforeach
+      <!--template array pasta cortissima-->
+      @foreach ($cortissima as $j)
+        <h2>{{$j['tipo']}}</h2> 
+        <img src="{{$j['src']}}" alt=""> 
+      @endforeach
+    </main>
 
-    <!--template array pasta cortissima-->
-    @foreach ($cortissima as $j)
-      <h2>{{$j['tipo']}}</h2> 
-      <img src="{{$j['src']}}" alt=""> 
-    @endforeach
+    <footer>
+
+    </footer>
+
+    
   </body>
 </html>

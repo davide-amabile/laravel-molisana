@@ -1,20 +1,5 @@
-//
-*{
-    background-origin: border-box;
-    margin: 0;
-    padding: 0;
-}
+@import "partials/_variable.scss";
+@import "partials/_common.scss";
+@import "partials/_header.scss";
+@import "partials/_main.scss";
 
-//immagine del logo
-
-.img_container{
-  width:400px;
-  height: 250px;
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 50px;
-}
-    .img_logo{
-    width: 100%;
-    height: 100%; 
-        }

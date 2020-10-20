@@ -12,8 +12,23 @@
   margin-bottom: 50px;
 }
 
-.img_logo {
+.img_container .img_logo {
   width: 100%;
   height: 100%;
+}
+
+.nav_pagine {
+  width: 100%;
+  text-align: center;
+}
+
+.nav_pagine li {
+  display: inline-block;
+  font-size: 25px;
+}
+
+.nav_pagine li a {
+  color: #000;
+  text-decoration: none;
 }
 

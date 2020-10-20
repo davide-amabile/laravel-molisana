@@ -1,0 +1,29 @@
+//immagine del logo
+
+.img_container{
+    width:400px;
+    height: 250px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    .img_logo{
+        width: 100%;
+        height: 100%; 
+            }
+  }
+    
+
+//nav 
+.nav_pagine{
+  width: 100%;
+  text-align: center;
+  li {
+    display: inline-block;
+    font-size: 25px;
+    a{
+     color: #000;
+     text-decoration: none;
+    }
+  }
+}
+
