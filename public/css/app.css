@@ -41,3 +41,36 @@
   text-decoration: none;
 }
 
+.big_container {
+  width: 100%;
+  background-image: url(/images/fondo-pag-speciali.jpg);
+}
+
+.big_container .wrapper_img {
+  width: 80%;
+  margin: auto;
+}
+
+.big_container .wrapper_img h2 {
+  margin: 20px 0;
+  color: #002d73;
+}
+
+.big_container .wrapper_img .box_type {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 100px;
+}
+
+.big_container .wrapper_img .box_type .box_pasta {
+  width: calc(100% / 4);
+  height: 250px;
+  margin: 20px;
+}
+
+.big_container .wrapper_img .box_type .box_pasta .img_pasta {
+  width: 100%;
+  height: 100%;
+}
+

@@ -30,23 +30,39 @@
 
 @section('mainContent')
   <main>
-    <!--template array pasta lunga lunga-->
-    @foreach ($lunga as $j)
-      <h2>{{$j['tipo']}}</h2> 
-      <img src="{{$j['src']}}" alt=""> 
-    @endforeach
-
-    <!--template array pasta corta-->
-    @foreach ($corta as $j)
-      <h2>{{$j['tipo']}}</h2> 
-      <img src="{{$j['src']}}" alt=""> 
-    @endforeach
-
-    <!--template array pasta cortissima-->
-    @foreach ($cortissima as $j)
-      <h2>{{$j['tipo']}}</h2> 
-      <img src="{{$j['src']}}" alt=""> 
-    @endforeach
+    <div class="big_container">
+      <div class="wrapper_img">
+          <!--template array pasta lunga lunga-->
+        <h2>LE LUNGHE</h2>
+        <div class="box_type">
+          @foreach ($lunga as $j)
+          <div class="box_pasta">
+            <img class="img_pasta" src="{{$j['src']}}" alt="">
+          </div>
+        @endforeach
+        </div>
+        
+        <h2>LE CORTE</h2>
+        <div class="box_type">
+          <!--template array pasta corta-->
+          @foreach ($corta as $j)
+            <div class="box_pasta">
+              <img class="img_pasta" src="{{$j['src']}}" alt="">
+            </div>
+          @endforeach
+        </div>
+        
+        <h2>LE CORTISSIME</h2>
+        <div class="box_type">
+          <!--template array pasta cortissima-->
+          @foreach ($cortissima as $j)
+            <div class="box_pasta">
+              <img class="img_pasta" src="{{$j['src']}}" alt="">
+            </div>
+          @endforeach 
+        </div>
+      </div> 
+    </div>
   </main>
 @endsection
 
