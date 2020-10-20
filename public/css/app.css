@@ -58,7 +58,7 @@
 
 .big_container .wrapper_img .box_type {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin: 20px 100px;
 }
