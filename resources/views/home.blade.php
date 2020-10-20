@@ -12,7 +12,8 @@
   $cortissima = [];
 
   // pusshare nei tre diffetenti array in base al tipo
- foreach ($array as $k => $product) {
+ foreach ($array as $key => $product) {
+   $product['id'] = $key;
    if($product['tipo'] == 'lunga'){
      $lunga[] = $product;
    } elseif ($product['tipo'] == 'corta') {
