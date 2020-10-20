@@ -38,6 +38,11 @@
           @foreach ($lunga as $j)
           <div class="box_pasta">
             <img class="img_pasta" src="{{$j['src']}}" alt="">
+            {{-- overlay --}}
+            <div class="overlay">
+              <a href="#">{{$j['titolo']}}</a>
+              <img class='icn_img' src="{{asset("images/icon_1.svg")}}" alt="">
+            </div>
           </div>
         @endforeach
         </div>
@@ -48,6 +53,11 @@
           @foreach ($corta as $j)
             <div class="box_pasta">
               <img class="img_pasta" src="{{$j['src']}}" alt="">
+              {{-- overlay --}}
+              <div class="overlay">
+                <a href="#">{{$j['titolo']}}</a>
+                <img class='icn_img' src="{{asset("images/icon_1.svg")}}" alt="">
+              </div>
             </div>
           @endforeach
         </div>
@@ -58,6 +68,11 @@
           @foreach ($cortissima as $j)
             <div class="box_pasta">
               <img class="img_pasta" src="{{$j['src']}}" alt="">
+              {{-- overlay --}}
+              <div class="overlay">
+                <a href="#">{{$j['titolo']}}</a>
+                <img class='icn_img' src="{{asset("images/icon_1.svg")}}" alt="">
+              </div>
             </div>
           @endforeach 
         </div>

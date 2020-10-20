@@ -15,16 +15,59 @@
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            
+            // box pasta
             .box_pasta{
                 width: calc(100% / 4);
                 height: 250px;
                 margin: 10px;
+                position: relative;
+                // immagine tipo pasta
                 .img_pasta{
                     width: 100%;
                     height: 100%;
                 }
+                // inizio overlay
+                .overlay{
+                    position: absolute;
+                    display: none;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: rgba(0,0,0,0.5);
+                    z-index: 1;
+                    cursor: pointer;
+                    // link layover
+                    a{ 
+                        text-decoration: none;
+                        text-align: center;
+                        font-size: 30px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        color: white;
+                    }
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        position: absolute;
+                        bottom: 10px;
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+                    // fine link layover
+                }
+            // fine overlay
+            // effetto hover
+            &:hover .overlay{
+                display: block;
             }
+            }
+            // box pasta
+            
         }
         //box_type
     }
