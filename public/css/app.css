@@ -47,26 +47,26 @@
 }
 
 .big_container .wrapper_img {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
 .big_container .wrapper_img h2 {
   margin: 20px 0;
   color: #002d73;
+  text-align: center;
 }
 
 .big_container .wrapper_img .box_type {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   flex-wrap: wrap;
-  margin: 20px 100px;
 }
 
 .big_container .wrapper_img .box_type .box_pasta {
   width: calc(100% / 4);
   height: 250px;
-  margin: 20px;
+  margin: 10px;
 }
 
 .big_container .wrapper_img .box_type .box_pasta .img_pasta {
