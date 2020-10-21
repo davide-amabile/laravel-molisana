@@ -6,16 +6,25 @@
     .wrapper_img{
         width: 90%;
         margin: auto;
-        h2 {
-            margin: 20px 0;
-            color: #002d73;
-            text-align: center;
-        }
         .box_type{
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
             // box pasta
+            .title{
+                width: 100%;
+                height: 70px;
+                h2 {
+                    margin: 20px 0;
+                    color: #002d73;
+                    text-align: center;
+                    line-height: 70px;
+                    font-size: 30px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    }
+            }
+            
             .box_pasta{
                 width: calc(100% / 4);
                 height: 250px;

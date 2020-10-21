@@ -1,0 +1,34 @@
+// contenitore del main
+#wrapper_sign{
+    width: 100%;
+    background-color: #b7dae5;
+    padding: 30px 0;
+    // container small
+    .container_small{
+        width: 80%;
+        margin: auto;
+        // div titolo
+        .titolo_prodotto{
+            width: 100%;
+            text-align: center;
+            color: #002d73;
+        }
+        // div titolo
+        // prima immagine
+        img{
+            width:100%;
+        }
+        // prima immagine
+        // descrizione
+        .descrizione{
+            color: #002d73;
+            text-align: left;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        // descrizione
+        
+    }
+    // container small
+}
+// contenitore del main
