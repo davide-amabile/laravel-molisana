@@ -14,7 +14,7 @@
             <img class="up_img" src="{{$prodotto["src-h"]}}" alt="">
             <img class="bottom_img" src="{{$prodotto["src-p"]}}" alt="">
             <div class="descrizione">
-                <p>{!!$prodotto["descrizione"]!!}</p>
+                {!!$prodotto["descrizione"]!!}
             </div>
         </div>
         {{-- fine container small --}}
